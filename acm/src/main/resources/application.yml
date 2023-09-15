@@ -1,0 +1,12 @@
+# H2 Console: http://localhost:8080/h2-console
+spring:
+  datasource:
+    url: jdbc:h2:mem:acm
+    username: acm
+    password: 123
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: true
+  h2:
+    console.enabled: true
